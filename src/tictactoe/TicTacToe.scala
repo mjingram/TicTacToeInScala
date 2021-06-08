@@ -158,16 +158,16 @@ object TicTacToe extends App {
     if (continueAnswer.equalsIgnoreCase("yes")) {
       val newBoard: GameBoard = new GameBoard()
       if(winner.equals(player1.name)){
-        println("in if loop")
+//        println("in if loop")
         game(player1, player2, newBoard, 1, player1Wins+1, player2Wins, draw)
 
       }
       else if(winner.equals(player2.name)) {
-        println("in else-if loop")
+//        println("in else-if loop")
         game(player1, player2, newBoard, 1, player1Wins, (player2Wins+1), draw)
 
       }else{
-        println("in else loop")
+//        println("in else loop")
         game(player1, player2, newBoard, 1, player1Wins, player2Wins, draw+1)
       }
 
